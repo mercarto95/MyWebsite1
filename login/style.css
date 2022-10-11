@@ -1,0 +1,197 @@
+.body{
+    background-color: rgb(185, 240, 126);
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.5;
+    transition: 0.5s ease-in;
+}
+
+.container{
+    position: relative;
+    width: 600px;
+    height: 700px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.logo{
+    color: rgb(68, 48, 48);
+    pointer-events:none;
+    background-color: rgb(180, 230, 164);
+    top: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 1px black solid;
+    border-radius: 10px;
+    max-height: 190px;
+}
+
+.mark1{
+    background-color: rgb(184, 192, 172);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px red;
+    padding: 7px;
+    color: rgb(80, 69, 65);
+    
+}
+
+.form{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.form{
+    display: flex;
+
+}
+
+.login{
+    width: 50%;
+}
+
+.register{
+    width: 50%;
+}
+
+
+.btn{
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    width: 100px;
+    background-color: rgb(185, 240, 126);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.formBx{
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    height: 600px;
+    border-radius: 9px;
+    left: 0;
+    transition: 0.5s ease-in;
+}
+
+.formBx.active { 
+    left: 50%;
+    
+}
+
+.body .origiLoginBtn{
+    background-color: rgb(185, 240, 126);
+}
+
+.formBx.active .btn{ 
+    background-color: green;
+}
+
+
+.body.active{
+    background-color: rgb(212, 110, 110);
+}
+
+.body.active .loginBtn{
+    background-color:  rgb(255, 53, 53);
+    transition: 0.5s ease-in;
+}
+
+.body.active .signupBtn{
+    background-color:  rgb(150, 150, 253);
+    transition: 0.5s ease-in;
+}
+
+.login-form{
+    margin: 30px 0 30px 0;
+    position: absolute;
+    width: 50%;
+}
+
+.input{
+    margin-bottom: 15px;
+    width: 90%;
+    height: 25px;
+    padding: 10px;
+    font-size: 19px;
+}
+
+.log{
+    width: 120px;
+    height: 40px;
+    background-color:  rgb(255, 53, 53);
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/*
+.body .login-form{
+    left: 50%;
+}
+*/
+
+.signup-form{
+    left: 0;
+    width: 50%;
+}
+
+.signup-form{
+    margin: 30px 0 30px 0px;
+    position: absolute;
+}
+
+
+.body .signup-form{
+    left: -50%;
+    transition: 0.2s ease-in;
+}
+
+.body.active .signup-form{
+    left: 0;
+    transition: 0.6s ease-in;
+}
+
+.body .formBx{
+    background-color:rgb(164, 191, 243);
+}
+
+.body.body.active .formBx{
+    background-color: rgb(209, 145, 145);
+}
+
+.body .login-form{
+    left: 50%;
+    transition: 0.6s ease-in;
+}
+
+.body.active .login-form{
+    left: 100%;
+    transition: 0.2s ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
