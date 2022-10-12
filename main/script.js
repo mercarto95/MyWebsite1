@@ -78,12 +78,14 @@ submitWeather.onclick = function(){
 }
 
 
-
+// '&appid=
+//830f81136e1ef6b0c6e5deb2efc17a2f
+//&units=metric&lang=sv
 
 function updateWeather(){
     if(cityToSearch == "")
         cityToSearch = 'orebro';
-    fetch('https://api.openweathermap.org/data/2.5/weather?&q='+ cityToSearch + '&appid=830f81136e1ef6b0c6e5deb2efc17a2f&units=metric&lang=sv')
+    fetch('https://api.openweathermap.org/data/2.5/weather?&q='+ cityToSearch + yourKey)
         .then( (response) => response.json() )
         //.then( (data)=> console.log(data) );
         .then( (data) =>{
